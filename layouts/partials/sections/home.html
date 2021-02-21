@@ -9,6 +9,7 @@
 {{ else if $author.name }}
   {{ $name = $author.name }}
 {{ end }}
+{{ $name:=" " }}
 
 {{ $sections:= site.Data.sections }}
 {{ if (index site.Data site.Language.Lang).sections }}
